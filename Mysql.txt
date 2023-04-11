@@ -1,0 +1,18 @@
+CREATE DATABASE samuel;
+
+use samuel;
+
+create table usuarios (
+id int auto_increment primary key,
+login varchar(30) unique,
+senha varchar(30)
+);
+
+create table produtos (
+id_produto int auto_increment primary key, 
+nome_produto varchar(30) unique, 
+qtd_produto varchar(8), 
+valor_produto varchar(10), 
+cat_produto varchar(30) 
+);
+insert into usuarios (login, senha) values('123','123');
